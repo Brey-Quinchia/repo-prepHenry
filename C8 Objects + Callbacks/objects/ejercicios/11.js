@@ -3,6 +3,7 @@ function invocarMetodo(objeto, metodo) {
   // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
   // NOTA: no necesitas retornar nada.
   // Tu código:
+  objeto[metodo](); 
 }
-
+invocarMetodo({n:'A',b:'C',ab:function(){return 'AB'}},'ab');
 module.exports = invocarMetodo;
