@@ -4,6 +4,9 @@ function agregarPropiedad(objeto, propiedad) {
   // Esta propiedad será igual al valor `null`.
   // Retornar el objeto.
   // Tu código:
+  objeto[propiedad]= null; 
+  console.log(JSON.stringify(objeto, null, 2));
+  return objeto;
 }
-
+agregarPropiedad({nombre:"Brey",edad:18},'genre');
 module.exports = agregarPropiedad;
