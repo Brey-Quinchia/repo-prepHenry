@@ -3,7 +3,9 @@ function actualizarValorPropiedad(objeto, propiedad, valor) {
    // Retorna el objeto actualizado.
    // Tu código:
    objeto[propiedad] = valor;
+   console.log(objeto);
    return objeto;
 }
+actualizarValorPropiedad({nombre:'Brey'},'edad',18)
 
 module.exports = actualizarValorPropiedad;
