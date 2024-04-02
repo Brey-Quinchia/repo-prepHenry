@@ -3,6 +3,9 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
   // Debes agregar el "nuevoAmigo" al final de este arreglo.
   // Retornar el objeto.
   // Tu código:
+  objetoUsuario.amigos.push(nuevoAmigo);
+  console.log(JSON.stringify(objetoUsuario,null,2));
+  return objetoUsuario;
 }
-
+agregarAmigo({me:'Brey',amigos:['juan','mike','charles']},'harris')
 module.exports = agregarAmigo;
